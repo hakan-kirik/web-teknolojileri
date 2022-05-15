@@ -1,0 +1,88 @@
+.kapsayici {
+    background-color: #818181   ;
+}
+.nav-link{
+    color: #ffffff;
+    font-family: 'Great Vibes', cursive;
+    font-size: 1cm;   
+}
+
+.yuk{
+    height: 70vh;
+}    
+.yazifont{
+        background-color:#d1d1d1 ;
+        font-family: 'Courier Prime', monospace;
+        font-size: 21px;
+}
+.baslikfont{
+    background-color:#d1d1d1 ;
+    font-family: 'Courier Prime', monospace;
+    font-size: 35px;
+}
+.ilgifont{
+    background-color:#d1d1d1 ;
+    font-family: 'Courier Prime', monospace;
+}
+
+.ayrac{
+    border:none;
+    border-top: 3px solid #000000;
+    max-width: 250px;
+    margin: 25px auto;
+}
+.ikon{
+    color: #414141;
+    position: relative;
+    top: -60px;
+    font-size: 40px;
+    border: 10px solid #d1d1d1;
+    background-color: #d1d1d1;
+}
+.footer{
+    background-color: #818181;
+    color: #ffffff;
+}
+.mob{
+    color:#ffffff;
+}
+table {
+    font-family: 'Nova Square', cursive;
+    border-collapse: collapse;
+    width: 75%;
+  }
+  
+  td, th {
+    border: 5px solid #000000;
+    text-align: left;
+    padding: 10px;
+  }
+
+body{
+    margin: 0;
+    padding: 0; 
+    background-color: #d1d1d1;
+}
+.safranbolu>img:hover{
+    opacity: 0.9;
+}
+.safranbolu{
+    width: 1000px;
+    background-color: #d1d1d1;
+
+}
+.ayraciletisim{
+    border:none;
+    border-top: 3px solid #000000;
+    max-width: 1000px;
+    margin: 25px auto;
+}
+.ikoniletisim{
+    color: #414141;
+    position: relative;
+    top: -60px;
+    font-size: 40px;
+    border: 10px solid #d1d1d1;
+    background-color: #d1d1d1;
+}
+

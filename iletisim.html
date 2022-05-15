@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <!-- Css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Great+Vibes&family=Nova+Square&display=swap" rel="stylesheet">
+
+    <!-- Ikon Kutuphanesi -->
+    <script src="https://kit.fontawesome.com/65aba994e2.js" crossorigin="anonymous"></script>
+</head>
+
+<title>B201210370</title>
+
+<body>
+
+    <!-- Menü Kısmı Başlangıç-->
+
+    <nav class="navbar navbar-expand-lg fixed-top kapsayici">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand">
+                <img width="150" src="img/logo.png" height="100"> </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><i class="fas fa-angle-double-down mob"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active me-5" aria-current="page" href="index.html">Anasayfa</a>
+                    </li>
+                    <li class="nav-item me-5">
+                        <a class="nav-link" href="ozgecmis.html">Özgeçmiş</a>
+                    </li>
+                    <li class="nav-item me-5">
+                        <a class="nav-link" href="memleketim.html">Memleketim</a>
+                    </li>
+                    <li class="nav-item me-5">
+                        <a class="nav-link" href="mirasimiz.html">Mirasımız</a>
+                    </li>
+                    <li class="nav-item me-5">
+                        <a class="nav-link" href="ilgialanlarim.html">İlgi Alanlarım</a>
+                    </li>
+                    <li class="nav-item me-5">
+                        <a class="nav-link" href="iletisim.html">İletişim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="login.html" class="nav-link active  text-white">
+                            <i class="fas fa-sign-in-alt"></i>
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Menü Kısmı Bitiş-->
+    <br><br><br>
+    <br><br><br>
+
+    <header>
+
+        <section class="p-5 text-center yazifont">
+            <div class="container">
+
+                <h2 class="mb-5 font-weight-bold">Bana Ulaşın</h2>
+                <hr class="ayrac"><i class="fas fa-address-card ikon"></i>
+            </div>
+        </section>
+    </header>
+
+    <main>
+
+        <div class="container">
+
+                  <form action="mesajkontrol.html" name="Form" onsubmit="return control()">
+
+                <div class="row">
+                    <div class="col">
+                        <label for="name">İsim</label>
+                        <input type="text" name="name" class="form-control" placeholder="İsminizi Giriniz">
+                        <small class="form-text text-muted">Zorunlu alan</small>
+                    </div>
+                    <div class="col">
+                        <label for="lastname">Soyisim</label>
+                        <input type="text" name="lastname" class="form-control" placeholder="Soyisminizi Giriniz">
+                        <small class="form-text text-muted">Zorunlu alan</small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" class="form-control" placeholder="Emailinizi giriniz.">
+                    <small class="form-text text-muted">Zorunlu alan</small>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Telefon (5XX)(XXX-XX-XX)</label>
+                    <input type="text" name="phone" class="form-control" placeholder="Telefon numarınızı giriniz.">
+                    <small class="form-text text-muted">Zorunlu alan</small>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mesaj</label>
+                    <textarea name="message" id="message" rows="5" class="form-control"></textarea>
+                    <small class="form-text text-muted">Zorunlu alan</small>
+
+                </div>
+
+                <button class="btn btn-dark" type="reset" id="submit" name="submit" value="Reset"
+                    onclick="check()">Temizle</button>
+
+                <button class="btn btn-dark" type="submit" id="sub">Gönder</button>
+
+                <br><br><br>
+
+            </form>
+
+        </div>
+
+    </main>
+
+
+    <!-- Footer başlangıç-->
+    <div class="light text-center footer">
+        <p class="align-middle p-3 mb-0">
+            <span>Tüm Hakları Saklıdır &copy; | 2022</span><br>
+            <span>Designed by <b>HAKAN KIRIK</b></span>
+        </p>
+    </div>
+    <!-- Footer bitiş-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+    </script>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        function control() {
+            var x = document.forms["Form"]["name"].value;
+            if (x == "") {
+                alert("İsim Boş Bırakılamaz");
+                return false;
+            }
+            var w = document.forms["Form"]["lastname"].value;
+            if (w == "") {
+                alert("Soyisim Boş Bırakılamaz");
+                return false;
+            }
+
+            var y = document.forms["Form"]["email"].value;
+            if (y == "") {
+                alert("Mail Kısmı Boş Bırakılamaz!");
+                return false;
+            }
+            var v = document.forms["Form"]["phone"].value;
+            if (v == "") {
+                alert("Telefon Numarası Kısmı Boş Bırakılamaz!");
+                return false;
+            }
+            var z = document.forms["Form"]["message"].value;
+            if (z == "") {
+                alert("Mesaj Kısmı Boş Bırakılamaz!");
+                return false;
+            }
+
+            var forMail = /^[a-zA-Z0-9._-]+@([a-zA-Z0-9.-]+.)+([.])+[a-zA-Z0-9.-]{2,4}$/;
+            if (forMail.test(y) == false) {
+                alert("Geçersiz Mail Adresi!");
+                return false;
+            }
+            var forPhone = /^\d{10}$/;
+            if (forPhone.test(v) == false) {
+                alert("Geçersiz Telefon Numarası!");
+                return false;
+            }
+
+        }
+    </script>
+</body>
+
+</html>
